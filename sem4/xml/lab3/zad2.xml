@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE pracownicy SYSTEM "zad2.dtd">
+
+<pracownicy>
+	<dzial-spozywczy>
+		<pracownik plec="m" pesel="92043234234">
+			<nazwisko>Nowak</nazwisko>
+			<imie>Michał</imie>
+			<data-zatr>10-01-2009</data-zatr>
+		</pracownik>
+		<pracownik plec="k" pesel="90043003021">
+			<nazwisko>Lipiec</nazwisko>
+			<imie>Anna</imie>
+			<data-zatr>04-12-2007</data-zatr>
+		</pracownik>
+		<pracownik plec="m" pesel="88011423412">
+			<nazwisko>Kosiński</nazwisko>
+			<imie>Mateusz</imie>
+			<data-zatr>25-03-1990</data-zatr>
+		</pracownik>
+	</dzial-spozywczy>
+	<dzial-chemiczny>
+		<pracownik plec="k" pesel="12345678988">
+			<nazwisko>Malinowska</nazwisko>
+			<imie>Marta</imie>
+			<data-zatr>23-06-2005</data-zatr>
+		</pracownik>
+		<pracownik pesel="87063023432">
+			<nazwisko>Ljuboia</nazwisko>
+			<imie>Danjel</imie>
+			<data-zatr>23-02-2010</data-zatr>
+		</pracownik>
+	</dzial-chemiczny>
+</pracownicy>

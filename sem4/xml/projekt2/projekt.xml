@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ksiazka>
+	<kontakty>
+		<osoba plec="m" grupa="KNP">
+			<imie>Janusz</imie>
+			<nazwisko>Korwin</nazwisko>
+			<nazwisko>Mikke</nazwisko>
+			<telefon>
+				<kom>+48502302402</kom>
+			</telefon>
+			<adres>
+				<ulica>Piłsudskiego</ulica>
+				<kod>30-389</kod>
+				<miasto>Kraków</miasto>
+			</adres>
+			<gg>5199110</gg>
+			<daty>1942-10-27 1991-11-25</daty>
+			<strona>http://nowaprawica.org.pl</strona>
+			<status status="prawica 100%" />
+		</osoba>
+		<osoba plec="k" grupa="PO">
+			<imie>Joanna</imie>
+			<nazwisko>Mucha</nazwisko>
+			<telefon>
+				<dom>224323344</dom>
+			</telefon>
+			<adres>
+				<ulica>Senatorska</ulica>
+				<kod>00-082</kod>
+				<miasto>Warszawa</miasto>
+			</adres>
+			<gg>6541063</gg>
+			<daty>brak</daty>
+			<strona>http://ministra.gov.pl</strona>
+			<status status="skandal" />
+		</osoba>
+		<osoba plec="m" grupa="PIS">
+			<imie>Antoni</imie>
+			<nazwisko>Macierewicz</nazwisko>
+			<telefon>
+				<praca>+48512384384</praca>
+			</telefon>
+			<adres>
+				<ulica>Koszykowa</ulica>
+				<kod>00-564</kod>
+				<miasto>Warszawa</miasto>
+			</adres>
+			<gg>1833845</gg>
+			<mail>antek@pis.gov.pl</mail>
+			<mail>pseudopravica@lol.org</mail>
+			<daty>brak</daty>
+			<strona>http://antusaty.gov.pl</strona>
+			<status status="cozacep" />
+		</osoba>
+		<osoba plec="brak" grupa="RPP">
+			<imie>Anna</imie>
+			<nazwisko>Grodzka</nazwisko>
+			<telefon>
+				<dom>+48227589838</dom>
+			</telefon>
+			<adres>
+				<ulica>Wiejska</ulica>
+				<kod>00-250</kod>
+				<miasto>Warszawa</miasto>
+			</adres>
+			<gg>8765768</gg>
+			<daty>brak</daty>
+			<strona>http://bezjaj.com.pl</strona>
+			<status status="niezdecydowany/a" />
+		</osoba>
+	</kontakty>
+	<grupy>
+		<gr grupka="KNP" />
+		<gr grupka="PO" />
+		<gr grupka="PIS" />
+		<gr grupka="RPP" />
+	</grupy>
+</ksiazka>

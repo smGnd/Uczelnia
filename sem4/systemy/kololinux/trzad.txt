@@ -1,0 +1,19 @@
+1 - NAPISAć SKRYPT, BASH, KTÓRY:
+a) wypisze liczbę podanych parametrów
+b) jeśli podano co najmniej 3 parametry, to wypisze trzeci parametr
+c) jeśli pierwszy parametr A jest liczbą, to wyświetli A-razy tekst "linux"
+d) jeśli pierwszy parametr A nie jest liczbą, to poprosi użytkownika o podanie liczby B, a potem wyświetli B-razy "linux"
+
+2 - PODAJ POLECENIA, KTÓRE
+a) pobierze plik http://www.wp.pl/plik.txt
+b) wyszuka pliki, które zawierają w treści słowo "linux"
+c) wyszuka pliki, które nie zawierają w treści słowa "linux"
+c) jakim poleceniem pakuje i rozpakowuje się pliki?
+d) jak wyświetlić listę procestów, które mają w nazwie podsłowo "sh" ?
+e) jak zapisać do pliku "raport.log" listę osób zalogowanych do systemu w tej chwili?
+f) podać przykłady zmiennych środowiskowych i opisać co zawierają
+g) jak wyświetlić pliki ukryte oraz ich prawa?
+h) jak zmienić prawa pliku log.txt tak, aby właściciel mógł go edytować i nikt inny?
+i) co robi polecenie trap, podać przykład.
+
+3 - SKRYPT AWK, KTÓRY WYśWIETLA CO DRUGI PROCES AKTUALNIE URUCHOMIONY, JEGO NAZWę TYLKO

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ksiazka>
+	<kontakty>
+	<osoba plec="m" grupa="OE">
+			<lubie></lubie>
+			<imie>Bartek</imie>
+			<nazwisko>Gniado</nazwisko>
+			<adres>
+				<miasto>Elbląg</miasto>
+				<kod_pocz>82-300</kod_pocz>
+				<ulica>Krzywa</ulica>
+				<nr_lok>23</nr_lok>
+			</adres>
+			<nr_tel>
+				<tel_kom>694877721</tel_kom>
+				<tel_dom>964722332</tel_dom>
+				<tel_sl>234425455</tel_sl>
+			</nr_tel>
+			<gg>5199110</gg>
+			<email>bgniado@gmail.com</email>
+			<strona>www.e-Olimpia.com</strona>
+			<dat>2005-10-29</dat>
+			<stat tekst="Jesteśmy zawsze tam"/>
+		</osoba>
+		
+		<osoba plec="k" grupa="OE">
+			<lubie></lubie>
+			<imie>Aga</imie>
+			<nazwisko>Fukadełko</nazwisko>
+			<adres>
+				<miasto>Elbląg</miasto>
+				<kod_pocz>82-300</kod_pocz>
+				<ulica>Legijna</ulica>
+				<nr_lok>2</nr_lok>
+			</adres>
+			<nr_tel>
+				<tel_kom>765432221</tel_kom>
+				<tel_dom>569443322</tel_dom>
+				<tel_sl>334421231</tel_sl>
+			</nr_tel>
+			<gg>10099087</gg>
+			<email>agentura@o2.com</email>
+			<strona>www.agus.pl</strona>
+			<dat>2005-12-15</dat>
+			<stat tekst="jestem offline"/>
+		</osoba>
+	
+		<osoba plec="m" grupa="ZS">
+			<lubie></lubie>
+			<imie>Maciek</imie>
+			<nazwisko>Zet</nazwisko>
+			<adres>
+				<miasto>Zawiercie</miasto>
+				<kod_pocz>32-500</kod_pocz>
+				<ulica>Kosinskiego</ulica>
+				<nr_lok>30</nr_lok>
+			</adres>
+			<nr_tel>
+				<tel_kom>123456789</tel_kom>
+				<tel_dom>900822421</tel_dom>
+				<tel_sl>334455112</tel_sl>
+			</nr_tel>
+			<gg>2345677</gg>
+			<email>mati1234@gmail.com</email>
+			<strona>www.zajaczek.pl</strona>
+			<dat>2002-09-22</dat>
+			<stat tekst="jestem Rumek"/>
+		</osoba>
+		
+		<osoba plec="k" grupa="LW">
+			<nie_lubie></nie_lubie>
+			<imie>Marta</imie>
+			<nazwisko>Kera</nazwisko>
+			<adres>
+				<miasto>Łomianki</miasto>
+				<kod_pocz>12-200</kod_pocz>
+				<ulica>Prosta</ulica>
+				<nr_lok>56</nr_lok>
+			</adres>
+			<nr_tel>
+				<tel_kom>666321222</tel_kom>
+				<tel_dom>664221223</tel_dom>
+				<tel_sl>543334222</tel_sl>
+			</nr_tel>
+			<gg>1235432</gg>
+			<email>lagodna@gmail.com</email>
+			<strona>www.antyojro.pl</strona>
+			<dat>2006-11-25 2006-11-22</dat>
+			<stat tekst="jestem offline"/>
+		</osoba>
+		
+		<osoba plec="m" grupa="LW">
+			<lubie></lubie>
+			<imie>Piotrek</imie>
+			<nazwisko>Jakubowski</nazwisko>
+			<adres>
+				<miasto>Ursynów</miasto>
+				<kod_pocz>00-555</kod_pocz>
+				<ulica>Melanżowa</ulica>
+				<nr_lok>69</nr_lok>
+			</adres>
+			<nr_tel>
+				<tel_kom>665523451</tel_kom>
+				<tel_dom>700722332</tel_dom>
+				<tel_sl>123225455</tel_sl>
+			</nr_tel>
+			<gg>9800625</gg>
+			<email>piterkora@wp.pl</email>
+			<strona>www.legionisci.pl</strona>
+			<dat>1916-01-01</dat>
+			<stat tekst="jestem wariatem"/>
+		</osoba>
+		
+		
+		
+		<osoba plec="k" grupa="ZS">
+			<lubie></lubie>
+			<imie>Daria</imie>
+			<nazwisko>Zsosnowca</nazwisko>
+			<adres>
+				<miasto>Sosnowiec</miasto>
+				<kod_pocz>55-555</kod_pocz>
+				<ulica>Zawierciowa</ulica>
+				<nr_lok>202</nr_lok>
+			</adres>
+			<nr_tel>
+				<tel_kom>665878111</tel_kom>
+				<tel_dom>521444800</tel_dom>
+				<tel_sl>366433355</tel_sl>
+			</nr_tel>
+			<gg>7284878</gg>
+			<email>czarnula@gmail.com</email>
+			<strona>www.zaglebie.pl</strona>
+			<dat>brak</dat>
+			<stat tekst="jestem offline"/>
+		</osoba>
+	</kontakty>
+	<grupy>
+		<gr grup="OE"/>
+		<gr grup="LW"/>
+		<gr grup="ZS"/>
+	</grupy>
+</ksiazka>

@@ -1,0 +1,42 @@
+<xsd:schema version="1.0">
+	<xsd:element name="faktura">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="NrFaktury" type="xsd:int" />
+				<xsd:element name="Sprzedawca">
+					<xsd:sequence>
+						<xsd:element name="NazwaFirmy" type="xsd:string" />
+						<xsd:element name="Adres">
+							<xsd:sequence>
+								<xsd:element name="Ulica" type="xsd:string" />
+								<xsd:element name="Miejscowosc" type="xsd:string" />
+								<xsd:element name="Kodpocztowy" type="xsd:string" />
+							</xsd:sequence>
+						</xsd:element>
+						<xsd:element name="NIP" type="xsd:string" />
+					</xsd:sequence>
+				</xsd:element>
+				<xsd:element name="Klient">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Imie" type="xsd:string" />
+							<xsd:element name="Nazwisko" type="xsd:string" />
+							<xsd:element name="NIP" type="xsd:string" />
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Produkty">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="nazwa" type="xsd:string" />
+							<xsd:element name="cena" type="xsd:int" />
+							<xsd:element name="ilosc" type="xsd:int" />
+						</xsd:sequence>
+						<xsd:attribute name="VAT" type="xsd:int" />
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="status" type="xsd:string" />
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

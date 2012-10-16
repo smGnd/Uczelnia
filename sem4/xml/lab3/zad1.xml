@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE uczelnia SYSTEM "zad1.dtd">
+
+<uczelnia>
+	
+	<nazwa>
+		Wyższa Szkoła Nicnierobienia
+	</nazwa>
+	
+	<rektor>
+		<imie>Jan</imie>
+		<nazwisko>Kowalski</nazwisko>
+		<tytul>profesor</tytul>
+	</rektor>
+	
+	<prorektor>
+		<imie>Krzysztof</imie>
+		<nazwisko>Nowak</nazwisko>
+		<tytul>doktor</tytul>
+	</prorektor>
+	
+	<prorektor>
+		<imie>Konstanty</imie>
+		<nazwisko>Machnowskij</nazwisko>
+		<tytul>doktor</tytul>
+	</prorektor>
+	
+	<wydzial>
+		<nazwa>MFI</nazwa>
+		
+		<dziekan>
+			<imie>Ireneusz</imie>
+			<nazwisko>Zakwas</nazwisko>
+			<tytul>profesor</tytul>
+		</dziekan>
+		
+		<instytut>
+			<nazwa>Informatyki</nazwa>
+			<szef>
+				<imie>Ignacy</imie>
+				<nazwisko>Bomba</nazwisko>
+				<tytul>doktor</tytul>
+			</szef>
+		</instytut>
+		
+		<instytut>
+			<nazwa>Matematyki</nazwa>
+			<szef>
+				<imie>Eugeniusz</imie>
+				<nazwisko>Siekiera</nazwisko>
+				<tytul>magister</tytul>
+			</szef>
+		</instytut>
+		
+		<instytut>
+			<nazwa>Fizyki</nazwa>
+			<szef>
+				<imie>Jolanta</imie>
+				<nazwisko>Inna</nazwisko>
+				<tytul>profesor</tytul>
+			</szef>
+		</instytut>
+		
+		<kierunek>
+			<nazwa>Informatyka</nazwa>
+			<kurs>
+				<nazwa>Programowania</nazwa>
+				<opis>Kurs uczy podstaw programowania w najpopularniejszych językach</opis>
+				<forma>Wykłady i ćwiczenia</forma>
+			</kurs>
+			<kurs>
+				<nazwa>Obsługi baz danych</nazwa>
+				<opis>Kurs uczy obsługi baz danych typu PostgreSQL, MySQL, MS SQL</opis>
+				<forma>praca w grupach</forma>
+			</kurs>
+		</kierunek>
+		
+		<kierunek>
+			<nazwa>Matematyka</nazwa>
+			<kurs>
+				<nazwa>Dodawania</nazwa>
+				<opis>Kurs uczy dodawania liczb całkowitych z przekroczeniem progu dziesiątkowego</opis>
+				<forma>Wykłady i ćwiczenia</forma>
+			</kurs>
+			<kurs>
+				<nazwa>Odejmowania</nazwa>
+				<opis>Nauka odejmowania w przystępnej formie</opis>
+				<forma>Kolorowanki</forma>
+			</kurs>
+		</kierunek>
+	</wydzial>
+	
+	<wydzial>
+		<nazwa>Prawa</nazwa>
+		
+		<dziekan>
+			<imie>Paweł</imie>
+			<nazwisko>Złoczyński</nazwisko>
+			<tytul>profesor</tytul>
+		</dziekan>
+		
+		<instytut>
+			<nazwa>Prawa karnego</nazwa>
+			<szef>
+				<imie>Euzebiusz</imie>
+				<nazwisko>Nóżyński</nazwisko>
+				<tytul>doktor</tytul>
+			</szef>
+		</instytut>
+		
+		<instytut>
+			<nazwa>Prawa cywilnego</nazwa>
+			<szef>
+				<imie>Janina</imie>
+				<nazwisko>Skandynawska</nazwisko>
+				<tytul>magister</tytul>
+			</szef>
+		</instytut>
+		
+		<instytut>
+			<nazwa>Prawa podatkowego</nazwa>
+			<szef>
+				<imie>Genowefa</imie>
+				<nazwisko>Pigwa</nazwisko>
+				<tytul>profesor</tytul>
+			</szef>
+		</instytut>
+		
+		<kierunek>
+			<nazwa>Prawo</nazwa>
+			<kurs>
+				<nazwa>Obrońcy</nazwa>
+				<opis>Uczy bronić</opis>
+				<forma>Wykłady</forma>
+			</kurs>
+			<kurs>
+				<nazwa>Prokuratora</nazwa>
+				<opis>Uczy prokuratorzyć</opis>
+				<forma>praca w grupach</forma>
+			</kurs>
+		</kierunek>
+		
+		<kierunek>
+			<nazwa>Lewo</nazwa>
+			<kurs>
+				<nazwa>Kłamania</nazwa>
+				<opis>Kurs uczy profesjonalnego oszukiwania aparatu państwowego</opis>
+				<forma>Wykłady i ćwiczenia</forma>
+			</kurs>
+			<kurs>
+				<nazwa>Łapówkarstwa</nazwa>
+				<opis>Jak dawać, jak brać</opis>
+				<forma>Ćwiczenia praktyczne</forma>
+			</kurs>
+		</kierunek>
+	</wydzial>
+	
+	<katedra>
+		<nazwa>Niesamowitości</nazwa>
+		<szef>
+			<imie>Hyundai</imie>
+			<nazwisko>Orimoto</nazwisko>
+			<tytul>prof dr hab</tytul>
+		</szef>
+	</katedra>
+	
+	<biblioteka>
+		Jest.
+	</biblioteka>
+</uczelnia>

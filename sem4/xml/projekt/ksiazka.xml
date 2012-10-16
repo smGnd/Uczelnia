@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="ksiazka.css"?>
+<!DOCTYPE kontakty SYSTEM "ksiazka.dtd">
+
+<ksiazka ksiazka-at-grupaid="LW OE ZS">
+	<grupa grupaid="LW">
+		<nazwa>LEGIONIŚCI</nazwa>
+		<kontakt kontakt-at-grupaid="LW">
+			<osoba plec="k">
+				<imie>Marta</imie>
+				<nazwisko>Żwawa</nazwisko>
+				<ksywa>Kerson</ksywa>
+				<telefon>606-422-789</telefon>
+			</osoba>
+		</kontakt>
+		<kontakt kontakt-at-grupaid="LW">
+			<osoba plec="m">
+				<imie>Pie</imie>
+				<nazwisko>Trek</nazwisko>
+				<ksywa>Piter</ksywa>
+				<adres>
+					<ulica>Jakaśtam</ulica>
+					<nrdom>15</nrdom>
+					<miasto>Warszawa-URSYNÓW</miasto>
+				</adres>
+				<telefon>508-325-123</telefon>
+				<email>pietras@legionista.com</email>
+				<strona>www.kochamITI.pl</strona>
+			</osoba>
+		</kontakt>
+		<kontakt kontakt-at-grupaid="LW">
+			<osoba plec="m">
+				<imie>Patryk</imie>
+				<nazwisko>Uzależniony</nazwisko>
+				<ksywa>Esz</ksywa>
+				<telefon>501-221-886</telefon>
+				<strona>www.tylko-gw.pl</strona>
+			</osoba>
+		</kontakt>
+	</grupa>
+	<grupa grupaid="OE">
+		<nazwa>OLIMPIJCZYCY</nazwa>
+		<kontakt kontakt-at-grupaid="OE">
+			<osoba plec="k">
+				<imie>Aga</imie>
+				<nazwisko>Agentura</nazwisko>
+				<ksywa>Bombel</ksywa>
+				<adres>
+					<ulica>Nieborowska</ulica>
+					<nrdom>500</nrdom>
+					<miasto>Gdańsk</miasto>
+				</adres>
+				<telefon>502-432-646</telefon>
+			</osoba>
+		</kontakt>
+		<kontakt kontakt-at-grupaid="OE">
+			<osoba plec="m">
+				<imie>Mateusz</imie>
+				<nazwisko>Molibdenowy</nazwisko>
+				<ksywa>Matik</ksywa>
+				<adres>
+					<ulica>Grunwaldzka</ulica>
+					<nrdom>50</nrdom>
+					<miasto>Elbląg</miasto>
+				</adres>
+				<telefon>508-123-456</telefon>
+				<email>molibden@email.pl</email>
+				<strona>www.mm.pl</strona>
+			</osoba>
+		</kontakt>
+		<kontakt kontakt-at-grupaid="OE">
+			<osoba plec="m">
+				<imie>Maciej</imie>
+				<nazwisko>Zając</nazwisko>
+				<ksywa>Kicu</ksywa>
+				<telefon>665-654-321</telefon>
+			</osoba>
+		</kontakt>
+		<kontakt kontakt-at-grupaid="OE">
+			<osoba plec="m">
+				<imie>Mateusz</imie>
+				<nazwisko>Ka</nazwisko>
+				<ksywa>Kosa</ksywa>
+				<adres>
+					<ulica>Grudziądzka</ulica>
+					<nrdom>2</nrdom>
+					<miasto>Elbląg</miasto>
+				</adres>
+				<telefon>654-106-321</telefon>
+				<email>kosa.z.nosa@kinol.gov.pl</email>
+				<strona>www.e-Olimpia.com</strona>
+			</osoba>
+		</kontakt>
+	</grupa>
+	<grupa grupaid="ZS">
+		<nazwa>ZAGŁĘBIACY</nazwa>
+		<kontakt kontakt-at-grupaid="ZS">
+			<osoba plec="m">
+				<imie>Łukasz</imie>
+				<nazwisko>Bogdański</nazwisko>
+				<ksywa>Bodzio</ksywa>
+				<telefon>502-990-132</telefon>
+			</osoba>
+		</kontakt>
+		<kontakt kontakt-at-grupaid="ZS">
+			<osoba plec="k">
+				<imie>Daria</imie>
+				<nazwisko>Czarna</nazwisko>
+				<ksywa>Daria-z-Sosnowca</ksywa>
+				<adres>
+					<ulica>Sosnowiecka</ulica>
+					<nrdom>365</nrdom>
+					<miasto>Sosnowiec</miasto>
+				</adres>
+				<telefon>668-128-498</telefon>
+				<email>dariunia@lovestory.pl</email>
+				<strona>www.zaglebie.sosnowiec.pl</strona>
+			</osoba>
+		</kontakt>
+		<kontakt kontakt-at-grupaid="ZS">
+			<osoba plec="m">
+				<imie>Marcin</imie>
+				<nazwisko>Siano</nazwisko>
+				<ksywa>Marti</ksywa>
+				<email>marti@sosnowiec.pl</email>
+			</osoba>
+		</kontakt>
+	</grupa>
+</ksiazka>

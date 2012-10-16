@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+<xsd:element name="ksiazka">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="kontakty" type="kontakt" />
+			<xsd:element name="grupy" type="grupa" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:keyref name="klucz" refer="refklucz">
+		<xsd:selector xpath="kontakty/osoba" />
+		<xsd:field xpath="@grupa" />
+	</xsd:keyref>
+	<xsd:key name="refklucz">
+		<xsd:selector xpath="grupy/gr" />
+		<xsd:field xpath="@grupka" />
+	</xsd:key>
+</xsd:element>
+
+<xsd:complexType name="kontakt">
+	<xsd:sequence>
+		<xsd:element name="osoba" type="osoba" maxOccurs="unbounded" />
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="grupa">
+	<xsd:sequence>
+		<xsd:element name="gr" maxOccurs="unbounded" type="g" />
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="g">
+	<xsd:attribute name="grupka" type="xsd:string" use="required" />
+</xsd:complexType>
+
+<xsd:complexType name="osoba">
+	<xsd:sequence>
+		<xsd:element name="imie" type="nazwa" />
+		<xsd:element name="nazwisko" type="nazwa" maxOccurs="2" />
+		<xsd:element name="telefon" type="telefon" />
+		<xsd:element name="adres" type="adres" />
+		<xsd:element name="gg" type="gg" />
+		<xsd:element name="mail" type="email" minOccurs="0" maxOccurs="5"/>
+		<xsd:element name="daty" type="daty" />
+		<xsd:element name="strona" type="http" />
+		<xsd:element name="status" type="status" />
+	</xsd:sequence>
+	<xsd:attribute name="grupa" type="xsd:string" />
+	<xsd:attribute name="plec" type="plec" />
+</xsd:complexType>
+
+<xsd:simpleType name="nazwa">
+	<xsd:restriction base="xsd:string">
+		<xsd:pattern value="[A-Z]{1}\w*" />
+		<xsd:maxLength value="30" />
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="plec">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="m" />
+		<xsd:enumeration value="k" />
+		<xsd:enumeration value="brak" />
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:complexType name="telefon">
+	<xsd:choice>
+		<xsd:element name="dom" type="nrtel" />
+		<xsd:element name="kom" type="nrtel" />
+		<xsd:element name="praca" type="nrtel" />
+	</xsd:choice>
+</xsd:complexType>
+
+<xsd:complexType name="adres">
+	<xsd:sequence>
+		<xsd:element name="ulica" type="nazwa" />
+		<xsd:element name="kod" type="kod" />
+		<xsd:element name="miasto" type="nazwa" />
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:simpleType name="gg">
+	<xsd:restriction base="xsd:string">
+		<xsd:pattern value="[0-9]{5,10}" />
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="email">
+	<xsd:restriction base="xsd:string">
+		<xsd:pattern value="[a-z]*@[a-z]*.([a-z]{2,3}|[a-z]{2,3}.[a-z]{2})" />
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="daty">
+	<xsd:union memberTypes="listadaty brak"></xsd:union>
+</xsd:simpleType>
+
+<xsd:simpleType name="brak">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="brak" />
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="listadaty">
+	<xsd:list itemType="xsd:date" />
+</xsd:simpleType>
+
+<xsd:simpleType name="http">
+	<xsd:restriction base="xsd:string">
+		<xsd:pattern value="http://[a-z]*.([a-z]{2,3}.)?[a-z]{2,3}" />
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:complexType name="status">
+	<xsd:attribute name="status" type="xsd:string" />
+</xsd:complexType>
+
+<xsd:simpleType name="nrtel">
+	<xsd:restriction base="xsd:string">
+		<xsd:pattern value="(\+[0-9]{11}|[0-9]{9})" />
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="kod">
+	<xsd:restriction base="xsd:string">
+		<xsd:pattern value="[0-9]{2}\-[0-9]{3}" />
+	</xsd:restriction>
+</xsd:simpleType>
+
+</xsd:schema>

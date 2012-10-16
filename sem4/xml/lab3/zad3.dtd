@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT	automat		(stany, alfabet, funkcja, spocz, skon)>
+<!ATTLIST	automat
+					typ 		(deterministyczny|niedeterministyczny) #REQUIRED>
+<!ELEMENT	stany	(stan)+>
+<!ELEMENT	stan		(#PCDATA)>
+<!ELEMENT	alfabet		(symbol+)>
+<!ELEMENT	symbol		(#PCDATA)>
+<!ELEMENT	funkcja		(przejscie+)>
+<!ELEMENT	przejscie	(#PCDATA)>
+<!ATTLIST	przejscie
+					stan		CDATA #REQUIRED
+					symbol		CDATA #REQUIRED
+					nstan		CDATA #REQUIRED>
+
+<!ELEMENT	spocz		(#PCDATA)>
+<!ELEMENT	skon		(stankon+)>
+<!ELEMENT	stankon		(#PCDATA)>

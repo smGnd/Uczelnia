@@ -1,0 +1,276 @@
+ksiazka
+{
+	display:		block;
+	position:		relative;
+	width: 			850px;
+	height:			800px;
+	margin: 		10px auto 10px auto;
+	margin-bottom:	10px;
+	background:		url(grafika/tlo.png);
+}
+
+grupa[grupaid="LW"]
+{
+	position:		absolute;
+	left:			290px;
+	top:			10px;
+	width: 			270px;
+	margin: 		auto auto auto auto;
+	margin-top: 	10px;
+	border: 		1px solid black;
+	background:		url(grafika/lw.png);
+}
+
+grupa[grupaid="OE"]
+{
+	position:		absolute;
+	left:			10px;
+	top:			10px;
+	width: 			270px;
+	margin: 		auto auto auto auto;
+	margin-top: 	10px;
+	border: 		1px solid black;
+	background:		url(grafika/oe.png);
+}
+
+grupa[grupaid="ZS"]
+{
+	position:		absolute;
+	left:			570px;
+	top:			10px;
+	width: 			270px;
+	margin: 		auto auto auto auto;
+	margin-top: 	10px;
+	border: 		1px solid black;
+	background:		url(grafika/zs.png);
+}
+
+kontakt[kontakt-at-grupaid="OE"]
+{
+	display:		block;
+	margin: 		5px 5px 5px 5px;	
+	background:		url(grafika/oe2.png);	
+}
+
+kontakt[kontakt-at-grupaid="OE"]:hover
+{
+	color:			black;
+	background:		url(grafika/oe2hov.png);
+}
+
+kontakt[kontakt-at-grupaid="LW"]
+{
+	display:		block;
+	margin: 		5px 5px 5px 5px;	
+	background:		url(grafika/lw2.png);	
+}
+
+kontakt[kontakt-at-grupaid="LW"]:hover
+{
+	color:			black;
+	background:		url(grafika/lw2hov.png);
+}
+
+kontakt[kontakt-at-grupaid="ZS"]
+{
+	display:		block;
+	margin: 		5px 5px 5px 5px;	
+	background:		url(grafika/zs2.png);	
+}
+
+kontakt[kontakt-at-grupaid="ZS"]:hover
+{
+	color:			black;
+	background:		url(grafika/zs2hov.png);
+}
+
+kontakt[kontakt-at-grupaid="OE"]>osoba
+{
+	display:		block;
+	margin: 		auto auto auto auto;
+	border: 		1px solid black;
+}
+
+kontakt[kontakt-at-grupaid="LW"]>osoba
+{
+	display:		block;
+	margin: 		auto auto auto auto;
+	border: 		1px solid black;
+}
+
+kontakt[kontakt-at-grupaid="ZS"]>osoba
+{
+	display:		block;
+	margin: 		auto auto auto auto;
+	border: 		1px solid black;
+}
+
+grupa>nazwa
+{
+	display:		block;
+	text-align:		center;
+	margin: 		5px 5px 5px 5px;
+	font-size:		20px;
+	font-variant:	small-caps;
+	font-family:	Verdana;
+	font-weight: 	bold;
+	color:			black;
+}
+
+imie, nazwisko, ksywa, adres, telefon, e-mail, strona
+{
+	display: 		block;
+	margin:			2px 2px 2px 2px;
+	font-variant:	small-caps;
+	font-size:		12px;
+	margin-top:		2px;
+	margin-bottom:	2px;
+	margin-left:	2px;
+}
+
+ulica, nrdom, miasto
+{
+	display:		block-inline;
+	font-size:		12px;
+}
+
+imie:before
+{
+	content:		"Imie: ";
+	font-size:		10px;
+	font-family:	Verdana;
+	font-style:		italic;
+}
+
+nazwisko:before
+{
+	content:		"Nazwisko: ";
+	font-size:		10px;
+	font-family:	Verdana;
+	font-style:		italic;
+}
+
+ksywa:before
+{
+	content:		"Ksywa: ";
+	font-size:		10px;
+	font-family:	Verdana;
+	font-style:		italic;
+}
+
+adres:before
+{
+	content:		"Adres: ";
+	font-size:		10px;
+	font-family:	Verdana;
+	font-style:		italic;
+}
+
+telefon:before
+{
+	content:		"Telefon: ";
+	font-size:		10px;
+	font-family:	Verdana;
+	font-style:		italic;
+}
+
+email:before
+{
+	content:		"E-mail: ";
+	font-size:		10px;
+	font-family:	Verdana;
+	font-style:		italic;
+}
+
+strona:before
+{
+	content:		"Strona: ";
+	font-size:		10px;
+	font-family:	Verdana;
+	font-style:		italic;
+}
+
+ulica:before
+{
+	content:		"ul. ";
+}
+
+nrdom:before
+{
+	content:		" ";
+}
+
+miasto:before
+{
+	content:		", ";
+}
+
+kontakt>osoba[plec="k"]
+{
+	background-image:		url(grafika/k.png);
+	background-position: 	220px 10px;
+	background-repeat: 		no-repeat;
+}
+
+kontakt>osoba[plec="k"]:hover
+{
+	background-image:		url(grafika/k.png);
+	background-position: 	220px 10px;
+	background-repeat: 		no-repeat;
+}
+
+kontakt>osoba[plec="m"]
+{
+	background-image:		url(grafika/m.png);
+	background-position: 	220px 10px;
+	background-repeat: 		no-repeat;
+}
+
+kontakt>osoba[plec="m"]:hover
+{
+	background-image:		url(grafika/m.png);
+	background-position: 	220px 10px;
+	background-repeat: 		no-repeat;
+}
+
+kontakt[kontakt-at-grupaid="OE"]
+{
+	list-style-type: 		none;
+	counter-increment: 		OE;
+}
+
+kontakt[kontakt-at-grupaid="LW"]
+{
+	list-style-type: 		none;
+	counter-increment: 		LW;
+}
+
+kontakt[kontakt-at-grupaid="ZS"]
+{
+	list-style-type: 		none;
+	counter-increment: 		ZS;
+}
+
+kontakt[kontakt-at-grupaid="OE"]>osoba:before
+{
+	content: 		counters(OE, ".");
+	margin-bottom: 	0px;
+	margin-left: 	3px;
+	font-size:		10px;
+}
+
+kontakt[kontakt-at-grupaid="LW"]>osoba:before
+{
+	content: 		counters(LW, ".");
+	margin-bottom: 	0px;
+	margin-left: 	3px;
+	font-size:		10px;
+}
+
+kontakt[kontakt-at-grupaid="ZS"]>osoba:before
+{
+	content: 		counters(ZS, ".");
+	margin-bottom: 	0px;
+	margin-left: 	3px;
+	font-size:		10px;
+}

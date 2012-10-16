@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE automat SYSTEM "zad3.dtd">
+
+<automat typ="deterministyczny">
+	<stany>
+		<stan>q0</stan>
+		<stan>q1</stan>
+		<stan>q2</stan>
+	</stany>
+	<alfabet>
+		<symbol>a</symbol>
+		<symbol>b</symbol>
+	</alfabet>
+	<funkcja>
+		<przejscie stan="q0" symbol="a" nstan="q0" />
+		<przejscie stan="q0" symbol="b" nstan="q1" />
+		<przejscie stan
+	</funkcja>
+</automat>

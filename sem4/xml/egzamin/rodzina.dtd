@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ENTITY % dane "imie, nazwisko, rok-urodzenia, rok-smierci?">
+
+<!ELEMENT rodzina  (osoba+)>
+<!ELEMENT osoba  (%dane;)>
+<!ATTLIST osoba plec (m|k) "m"
+				id ID #REQUIRED
+				wspolmalzonek IDREF #IMPLIED
+				rodzice IDREFS #IMPLIED>
+<!ELEMENT imie  (#PCDATA)>
+<!ELEMENT nazwisko  (#PCDATA)>
+<!ELEMENT rok-urodzenia  (#PCDATA)>
+<!ELEMENT rok-smierci  (#PCDATA)>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="faktura">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="nrfak" type="xsd:int" />
+				<xsd:element name="sprzedawca" type="osoba" />
+				<xsd:element name="klient" type="osoba" />
+				<xsd:element name="zakupy" type="lista" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:complexType name="osoba">
+		<xsd:sequence>
+			<xsd:element name="imie" type="xsd:string" />
+			<xsd:element name="nazwisko" type="xsd:string" />
+			<xsd:element name="dane" type="dane-kontaktowe" />
+			<xsd:element name="nip" type="NIP" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="NIP">
+		<xsd:restriction base="xsd:string">
+			 <xsd:pattern value="([0-9]|-)*" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="dane-kontaktowe">
+		<xsd:all>
+			<xsd:element name="adres" type="adres" />
+			<xsd:element name="telefon" type="telefon" />
+		</xsd:all>
+	</xsd:complexType>
+	
+	<xsd:complexType name="adres">
+		<xsd:sequence>
+			<xsd:element name="ulica" type="xsd:string" />
+			<xsd:element name="kodpocz" type="kodpocz" />
+			<xsd:element name="miasto" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="kodpocz">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9]{2}-[0-9]{3}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="telefon">
+		<xsd:choice>
+			<xsd:element name="domowy" type="nrteldom" />
+			<xsd:element name="komorkowy" type="nrtelkom" />
+		</xsd:choice>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="nrteldom">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9]{3}-[0-9]{2}-[0-9]{2}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="nrtelkom">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9]{3}-[0-9]{3}-[0-9]{3}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="lista">
+		<xsd:sequence>
+			<xsd:element name="produkt" type="produkt" minOccurs="1" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="produkt">
+		<xsd:sequence>
+			<xsd:element name="nazwa" type="xsd:string" />
+			<xsd:element name="kod" type="symbol" />
+			<xsd:element name="cena" type="cena" />
+			<xsd:element name="waluta" type="waluta" />
+			<xsd:element name="ilosc" type="xsd:int"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="cena">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9]*,[0-9]{2}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="waluta">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="USD" />
+			<xsd:enumeration value="PLN" />
+			<xsd:enumeration value="EUR" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="symbol">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="([A-Z]|[0-9]){5,10}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

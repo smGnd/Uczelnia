@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT	ksiazka				(grupa*)>
+<!ATTLIST	ksiazka
+			ksiazka-at-grupaid	IDREFS		#REQUIRED>
+
+<!ELEMENT	grupa				(nazwa, kontakt*)>
+<!ATTLIST	grupa
+			grupaid				ID			#REQUIRED>
+	
+<!ELEMENT	kontakt				(osoba)>
+<!ATTLIST	kontakt
+			kontakt-at-grupaid	IDREF		#REQUIRED>
+			
+<!ELEMENT	osoba				(imie, nazwisko, ksywa, adres?, telefon, email?, strona?)>
+<!ATTLIST	osoba
+			plec				(k | m)>
+
+<!ELEMENT	imie				(#PCDATA)>
+<!ELEMENT	nazwisko			(#PCDATA)>
+<!ELEMENT	ksywa				(#PCDATA)>
+<!ELEMENT	adres				(ulica?, nrdom?, miasto)>
+<!ELEMENT	ulica				(#PCDATA)>
+<!ELEMENT	nrdom				(#PCDATA)>
+<!ELEMENT	miasto				(#PCDATA)>
+<!ELEMENT	telefon				(#PCDATA)>
+<!ELEMENT	email				(#PCDATA)>
+<!ELEMENT	strona				(#PCDATA)>

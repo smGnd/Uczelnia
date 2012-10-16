@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE rodzina SYSTEM "rodzina.dtd">
+
+<rodzina>
+	<osoba plec="m" id="aj72" wspolmalzonek="aj85" rodzice="az22">
+		<imie>Artur</imie>
+		<nazwisko>Jędrzejczyk</nazwisko>
+		<rok-urodzenia>1972</rok-urodzenia>
+		<rok-smierci></rok-smierci>
+	</osoba>
+	<osoba plec="k" id="aj85" wspolmalzonek="aj72">
+		<imie>Anna</imie>
+		<nazwisko>Jędrzejczyk</nazwisko>
+		<rok-urodzenia>1985</rok-urodzenia>
+		<rok-smierci></rok-smierci>
+	</osoba>
+	<osoba plec="m" id="ew28" wspolmalzonek="jw33">
+		<imie>Edward</imie>
+		<nazwisko>Wiertara</nazwisko>
+		<rok-urodzenia>1928</rok-urodzenia>
+		<rok-smierci>2005</rok-smierci>
+	</osoba>
+	<osoba plec="k" id="jw33" wspolmalzonek="ew28">
+		<imie>Jadwiga</imie>
+		<nazwisko>Wiertara</nazwisko>
+		<rok-urodzenia>1933</rok-urodzenia>
+		<rok-smierci></rok-smierci>
+	</osoba>
+	<osoba plec="k" id="az22">
+		<imie>Anna</imie>
+		<nazwisko>Zając</nazwisko>
+		<rok-urodzenia>1922</rok-urodzenia>
+		<rok-smierci>1982</rok-smierci>
+	</osoba>
+	<osoba plec="k" id="jz65" rodzice="ew28 jw33">
+		<imie>Jadwiga</imie>
+		<nazwisko>Zając</nazwisko>
+		<rok-urodzenia>1965</rok-urodzenia>
+		<rok-smierci></rok-smierci>
+	</osoba>
+	<osoba plec="k" id="mz91" rodzice="aj72 aj85">
+		<imie>Marysia</imie>
+		<nazwisko>Zając</nazwisko>
+		<rok-urodzenia>1991</rok-urodzenia>
+		<rok-smierci></rok-smierci>
+	</osoba>
+</rodzina>

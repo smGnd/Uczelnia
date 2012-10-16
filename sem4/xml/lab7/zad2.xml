@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wypozyczalnia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="zad2.xsd">
+	<kaseta kasetaid="SWL-88590">
+		<tytul>Gwiezdne Wojny</tytul>
+		<cena>15,00</cena>
+		<rok>1978</rok>
+		<rezyser>G.Lucas</rezyser>
+	</kaseta>
+	<kaseta kasetaid="KZP-12421">
+		<tytul>Krzesło z pozytywką</tytul>
+		<cena>2,00</cena>
+		<rok>1995</rok>
+		<rezyser>A.Niemrawy</rezyser>
+	</kaseta>
+	<kaseta kasetaid="FTM-55302">
+		<tytul>Film</tytul>
+		<cena>5,00</cena>
+		<rok>1928</rok>
+		<rezyser>B.Mosse</rezyser>
+	</kaseta>
+	<kaseta kasetaid="HZJ-12345">
+		<tytul>Historia z jedynką</tytul>
+		<cena>12,50</cena>
+		<rok>1999</rok>
+		<rezyser>A.Zonk</rezyser>
+	</kaseta>
+	<wypozyczenie wypid="WSW-17210">
+		<datapocz>17-02-2010</datapocz>
+		<datakon>27-02-2010</datakon>
+		<film>SWL-88590</film>
+	</wypozyczenie>
+	<wypozyczenie wypid="WFT-22412">
+		<datapocz>22-04-2012</datapocz>
+		<datakon>01-05-2012</datakon>
+		<film>KZL-12421</film>
+	</wypozyczenie>
+</wypozyczalnia>

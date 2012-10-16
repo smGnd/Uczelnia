@@ -1,0 +1,12 @@
+a) wget http://www.wp.pl/plik.txt
+b)
+c)
+c) 	pakowanie:	zip [nazwa archiwum] [plik1] [plik2] ...
+	rozpakowanie:	unzip [nazwa archiwum]
+d)
+e) who > raport.log
+f)	USER - przechowuje aktualnie zalogowanego użytkownika
+	PATH - przechowuje
+g) ls -la
+h) chmod 744 log.txt
+i) przechwytuje przerwania

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<filmy>
+	<film gatunek="sci-fi">
+		<tytul>Matrix</tytul>
+		<rok>1999</rok>
+		<czas-trwania>136</czas-trwania>
+		<ocena>8.7</ocena>
+		<rezyser>Andy Wachowski</rezyser>
+		<rezyser>Lana Wachowski</rezyser>
+		<aktorzy>
+			<aktor>Keanu Reeves</aktor>
+			<aktor>Laurence Fishburne</aktor>
+			<aktor>Carrie-Anne Moss</aktor>
+			<aktor>Hugo Weaving</aktor>
+		</aktorzy>
+	</film>
+	<film gatunek="horror">
+		<tytul>Obcy - 8. pasazer Nostromo</tytul>
+		<rok>1979</rok>
+		<czas-trwania>117</czas-trwania>
+		<ocena>8.5</ocena>
+		<rezyser>Ridley Scott</rezyser>
+		<aktorzy>
+			<aktor>Sigourney Weaver</aktor>
+		</aktorzy>
+	</film>
+	<film gatunek="komedia">
+		<tytul>Monty Python i Święty Graal</tytul>
+		<rok>1975</rok>
+		<czas-trwania>91</czas-trwania>
+		<ocena>8.4</ocena>
+		<rezyser>Terry Gilliam</rezyser>
+		<rezyser>Terry Jones</rezyser>
+		<aktorzy>
+			<aktor>Graham Chapman</aktor>
+			<aktor>John Cleese</aktor>
+			<aktor>Eric Idle</aktor>
+			<aktor>Terry Gilliam</aktor>
+		</aktorzy>
+	</film>
+	<film gatunek="kryminalny">
+		<tytul>Ojciec chrzestny</tytul>
+		<rok>1972</rok>
+		<czas-trwania>175</czas-trwania>
+		<ocena>9.2</ocena>
+		<rezyser>Francis Ford Coppola</rezyser>
+		<aktorzy>
+			<aktor>Marlon Brando</aktor>
+			<aktor>Al Pacino</aktor>
+		</aktorzy>
+	</film>
+</filmy>

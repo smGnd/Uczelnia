@@ -1,0 +1,30 @@
+a)
+    $ ./skrypt &
+
+b)
+    jobs
+    fg #
+    kill -9 PID
+
+c)
+    jobs
+    fg #
+
+d)
+    ARRAY[index]=coś
+
+e)
+    $@
+
+f)
+    echo $[#ZM]
+
+g)
+    sed 's/a/b/'
+
+h)
+    pack: tar -czf backup.tar.gz /katalog/do/spakowania
+    unpack: tar -xvzf nazwa_pliku.tar.gz
+
+i)
+    wget http://adres.do.pliku/

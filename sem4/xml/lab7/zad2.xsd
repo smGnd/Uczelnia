@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="wypozyczalnia">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="kaseta" type="kaseta" maxOccurs="unbounded"/>
+				<xsd:element name="wypozyczenie" type="wypozyczenie" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		
+		<xsd:key name="kl-kod">
+			<xsd:selector xpath="kaseta" />
+			<xsd:field xpath="@kasetaid" />
+		</xsd:key>
+	
+		<xsd:unique name="kl-tytulkod">
+			<xsd:selector xpath="kaseta" />
+			<xsd:field xpath="tytul" />
+			<xsd:field xpath="@kasetaid" />
+		</xsd:unique>
+	
+		<xsd:key name="kl-wyp">
+			<xsd:selector xpath="wypozyczenie" />
+			<xsd:field xpath="@wypid" />
+		</xsd:key>
+	
+		<xsd:keyref name="wyp-kaseta" refer="kl-kod">
+			<xsd:selector xpath="wypozyczenie" />
+			<xsd:field xpath="film" />
+		</xsd:keyref>
+		
+	</xsd:element>
+	
+	<xsd:complexType name="kaseta">
+		<xsd:sequence>
+			<xsd:element name="tytul" type="xsd:string" />
+			<xsd:element name="cena" type="cena" />
+			<xsd:element name="rok" type="rok" />
+			<xsd:element name="rezyser" type="xsd:string" />
+		</xsd:sequence>
+		<xsd:attribute name="kasetaid" type="kod" />
+	</xsd:complexType>
+	
+	<xsd:simpleType name="cena">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9]*,[0-9]{2}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="rok">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="(19|20)[0-9]{2}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="wypozyczenie">
+		<xsd:sequence>
+			<xsd:element name="datapocz" type="data" />
+			<xsd:element name="datakon" type="data" />
+			<xsd:element name="film" type="kod" />
+		</xsd:sequence>
+		<xsd:attribute name="wypid" type="kod" />
+	</xsd:complexType>
+	
+	<xsd:simpleType name="data">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9]{2}-[0-9]{2}-[0-9]{4}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="kod">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[A-Z]{3}-[0-9]{5}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	
+</xsd:schema>
