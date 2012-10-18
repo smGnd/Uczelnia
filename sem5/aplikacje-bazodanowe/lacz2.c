@@ -52,7 +52,7 @@ main(int argc, char **argv)
     if (argc > 1)
         conninfo = argv[1];
     else
-        conninfo = "dbname = bgniado password = ttrnwcw2011";
+        conninfo = "dbname = password = ";
 
     /* Make a connection to the database */
     conn = PQconnectdb(conninfo);
